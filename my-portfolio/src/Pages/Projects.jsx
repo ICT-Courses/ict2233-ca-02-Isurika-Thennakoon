@@ -1,4 +1,5 @@
 import React from "react";
+import ProjectCard from "../Components/ProjectCard";
 import Project1 from "../assets/project1.png";
 import Project2 from "../assets/project2.png";
 import Project3 from "../assets/project3.png";
@@ -48,28 +49,8 @@ export default function Project()  {
       
       <div className="grid md:grid-cols-3 gap-8">
         {projects.map((project, index) => (
-          <a 
-            key= {index}
-            href={project.link}
-            target="_blank"
-            rel="noopener noreferrer"
-            className={`block ${projects.bgColor} dark:bg-gray-900/90 backdrop-blur-md rounded-2xl shadow-lg p-4 hover:shadow-2xl transform hover:-translate-y-2 transition-all duration-300`}
-          >
-            <img
-              src={project.img}
-              alt={project.title}
-              className="rounded-lg mb-6 hover:scale-105 transition-transform duration-300"
-            />
-            <h3  className="text-xl font-semibold mb-3 text-gray-900 dark:text-gray-100">
-              {projects.title}
-            </h3>
-            <p className="text-gray-700 dark:text-gray-400 mb-4 leading-relaxed">
-               {project.description}
-            </p>
-            <span className="text-blue-700 dark:text-blue-400 font-semibold hover:underline">
-              View Project →
-            </span>
-          </a>
+          <ProjectCard key={index}{...project}/>
+          
         ))}
       </div>
     </section>
