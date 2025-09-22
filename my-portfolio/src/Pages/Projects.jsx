@@ -1,0 +1,78 @@
+import React from "react";
+import Project1 from "../assets/project1.png";
+import Project2 from "../assets/project2.png";
+import Project3 from "../assets/project3.png";
+import BgImage from "../assets/bg_image.jpg"; //background image
+
+const projects  = [
+  {
+    title: "Smart Diet Planner Application",
+    img: Project1,
+    description:
+      "A Windows Forms desktop application built with C# that helps users create personalized diet plans based on their calorie requirements, BMI, and health goals. Includes features like recipe suggestions and daily meal tracking.",
+    link:"https://drive.google.com/file/d/1cf6onLXCojv3RqHUS4NfIeg_5pMgx2Tg/view?usp=drive_link",
+    bgColor: "bg-blue-100/90",
+  },
+  {
+    title: "Travel-Guide website",
+    img: Project2,
+    description:
+      "A responsive travel guide website that helps users explore destinations, find attractions, and plan trips with detailed itineraries and local tips.",
+    link: "https://drive.google.com/file/d/1McIKADpcYAIeelkZNB1EYKv62jrK7vhV/view?usp=sharing",
+    bgColor: "bg-blue-100/90",
+  },
+  {
+    title: "Furniture website",
+    img: Project3,
+    description:
+      "A modern and responsive furniture website showcasing a variety of home and office furniture, allowing users to browse products, view details, and get inspiration for interior design.",
+    link:"https://github.com/your-username/weather-app",
+    bgColor: "bg-blue-100/90",
+  },
+];
+
+export default function Project()  {
+  return (
+    <section
+      style={{
+        backgroundImage: `url(${BgImage})`,
+        backgroundSize: "cover",
+        backgroundPosition: "center",
+        backgroundRepeat: "no-repeat",
+      }}
+      className="min-h-screen bg-gray-50/90 dark:bg-gray-800/80 px-6 md:px-20 py-12 transition-colors duration-500"
+    >
+       <h2 className="text-4xl font-bold text-center text-gray-600 dark:text-blue-400 mb-10">
+        MY PROJECTS
+      </h2>
+      
+      <div className="grid md:grid-cols-3 gap-8">
+        {projects.map((project, index) => (
+          <a 
+            key= {index}
+            href={project.link}
+            target="_blank"
+            rel="noopener noreferrer"
+            className={`block ${projects.bgColor} dark:bg-gray-900/90 backdrop-blur-md rounded-2xl shadow-lg p-4 hover:shadow-2xl transform hover:-translate-y-2 transition-all duration-300`}
+          >
+            <img
+              src={project.img}
+              alt={project.title}
+              className="rounded-lg mb-6 hover:scale-105 transition-transform duration-300"
+            />
+            <h3  className="text-xl font-semibold mb-3 text-gray-900 dark:text-gray-100">
+              {projects.title}
+            </h3>
+            <p className="text-gray-700 dark:text-gray-400 mb-4 leading-relaxed">
+               {project.description}
+            </p>
+            <span className="text-blue-700 dark:text-blue-400 font-semibold hover:underline">
+              View Project →
+            </span>
+          </a>
+        ))}
+      </div>
+    </section>
+  );
+}
+
