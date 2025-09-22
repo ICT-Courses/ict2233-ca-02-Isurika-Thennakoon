@@ -1,8 +1,8 @@
 import React, { useState, useEffect } from "react";
 import{ Routes, Route } from "react-router-dom";
 
-import Navbar from "./components/Navbar.jsx";
-import Footer from "./components/Footer.jsx";
+import Navbar from "./Components/Navbar";
+import Footer from "./Components/Footer";
 import Home from "./Pages/Home.jsx";
 import About from "./Pages/About.jsx";
 import Projects from "./Pages/Projects.jsx";
