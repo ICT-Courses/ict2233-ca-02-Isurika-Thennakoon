@@ -41,7 +41,7 @@ export default function About(){
             </div>
 
             {/* Education Box */}
-            <div className="bd-gray-600 text-white p-6 rounded-lg shadow-lg relative">
+            <div className="bg-gray-500 text-white p-6 rounded-lg shadow-lg relative">
               <h3 className="text-2xl font-semibold mb-2">Education</h3>
               <p> 
                 Studying at the <strong> University of Sri Jayewardenepura</strong>,
