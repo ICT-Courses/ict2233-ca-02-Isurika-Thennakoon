@@ -11,7 +11,7 @@ const projects  = [
     img: Project1,
     description:
       "A Windows Forms desktop application built with C# that helps users create personalized diet plans based on their calorie requirements, BMI, and health goals. Includes features like recipe suggestions and daily meal tracking.",
-    link:"https://github.com/ICT-Courses/application-development-ca1-Isurika-Thennakoon.git",
+    link:"https://github.com/ICT-Courses/application-development-ca1-Isurika-Thennakoon",
     bgColor: "bg-blue-100/90 dark:bg-blue-900/70",
   },
   {
@@ -19,7 +19,7 @@ const projects  = [
     img: Project2,
     description:
       "A responsive travel guide website that helps users explore destinations, find attractions, and plan trips with detailed itineraries and local tips.",
-    link: "https://github.com/ICT-Courses/ict2233-ca-01-Isurika-Thennakoon.git",
+    link: "https://github.com/ICT-Courses/ict2233-ca-01-Isurika-Thennakoon",
     bgColor: "bg-blue-100/90 dark:bg-blue-900/70",
   },
   {
