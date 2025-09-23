@@ -12,7 +12,7 @@ const projects  = [
     description:
       "A Windows Forms desktop application built with C# that helps users create personalized diet plans based on their calorie requirements, BMI, and health goals. Includes features like recipe suggestions and daily meal tracking.",
     link:"https://drive.google.com/file/d/1cf6onLXCojv3RqHUS4NfIeg_5pMgx2Tg/view?usp=drive_link",
-    bgColor: "bg-blue-100/90",
+    bgColor: "bg-blue-100/90 dark:bg-blue-900/70",
   },
   {
     title: "Travel-Guide website",
@@ -20,7 +20,7 @@ const projects  = [
     description:
       "A responsive travel guide website that helps users explore destinations, find attractions, and plan trips with detailed itineraries and local tips.",
     link: "https://drive.google.com/file/d/1McIKADpcYAIeelkZNB1EYKv62jrK7vhV/view?usp=sharing",
-    bgColor: "bg-blue-100/90",
+    bgColor: "bg-blue-100/90 dark:bg-blue-900/70",
   },
   {
     title: "Furniture website",
@@ -28,7 +28,7 @@ const projects  = [
     description:
       "A modern and responsive furniture website showcasing a variety of home and office furniture, allowing users to browse products, view details, and get inspiration for interior design.",
     link:"https://drive.google.com/file/d/1-KEgrvyxWhqn6yypsrx4Z8iRchwWfjx3/view?usp=sharing",
-    bgColor: "bg-blue-100/90",
+    bgColor: "bg-blue-100/90 dark:bg-blue-900/70",
   },
 ];
 
@@ -44,7 +44,7 @@ export default function Project()  {
       className="min-h-screen bg-gray-50/90 dark:bg-gray-800/80 px-6 md:px-20 py-12 transition-colors duration-500"
     >
        <h2 className="text-4xl font-bold text-center text-gray-600 dark:text-blue-400 mb-10">
-        MY PROJECTS
+        My Projects
       </h2>
       
       <div className="grid md:grid-cols-3 gap-8">
