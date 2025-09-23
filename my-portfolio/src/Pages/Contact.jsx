@@ -1,5 +1,5 @@
-
 import React, {useState} from "react";
+import { Mail, Github, Linkedin} from "lucide-react"
 import BgImage from "../assets/bg_image.jpg";
 
 export default function Contact() {
@@ -50,14 +50,36 @@ export default function Contact() {
           onChange={handleChange}
           className="w-full p-3 mb-4 border rounded-lg dark:bg-gray-700"
           required
-        >
-        </textarea>
+          rows={5}
+        />
+        
         <button
            type="submit"
           className="w-full bg-blue-600 text-white py-3  rounded-lg  hover:bg-blue-700 transition"
         >
           Send Message
         </button>
+        <div className="flex jusfify-center mt-6 gap-6">
+          <a
+            href="https://www.linkedin.com/in/pawani-thennakoon-4207a9315?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=android_app"
+            target="_blank"
+            rel="noopener noreferrer"
+            className="flex items-center gap-2 text-blue-700 hover:underline">
+              <Linkedin size={20} /> LinkedIn
+            </a>
+            <a 
+               href="https://github.com/Isurika-Thennakoon"
+               target="_blank"
+               rel="noopener noreferrer"
+               className="flex items-center gap-2 text-gray-800 dark:text-gray-200 hover:underline">
+              <Github size={20} /> GitHub
+              </a>
+              <a
+               href="mailto:isurikapawani21@gmail.com"
+               className="flex items-center gap-2 text-red-600  hover:underline">
+                <Mail size={20} /> Email
+               </a>
+        </div>
       </form>
        
     </section>
