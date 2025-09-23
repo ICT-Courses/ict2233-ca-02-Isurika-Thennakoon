@@ -55,18 +55,74 @@ export default function About(){
             <div className="bg-gray-800 text-white p-6 rounded-lg shadow-lg relative">
               <h3 className="text-2xl font-semibold mb-2">Skills</h3>
 
-              {/* Technical Skills */}
-              <h4 className="font-semibold underline mb-1">Technical Skills</h4>
-              <ul className="grid grid-cols-2 gap-2 mb-4">
-                <li>React.js</li>
-                <li>Tailwind CSS</li>
-                <li>JavaScript</li>
-                <li>Git & GitHub</li>
-                <li>REST APIs</li>
-                <li>Responsive Design</li>
-              </ul>
+              <h4 className="font-semibold underline mb-3 text-lg">Technical Skills</h4>
 
-              {/* Soft Skills */}
+              <p className="text-sm font-semibold mb-2">📚Programming & Scripting</p>
+              <div className="flex flex-wrap gap-2 mb-4">
+                {["C#", "Java", "Python", "JavaScript", "HTML", "CSS"].map((skill) => (
+                  <span
+                    key={skill}
+                    className="bg-gray-700 px-3 py-1 rounded-full text-sm hover:bg-gray-600 transition"
+                  >
+                    {skill}
+                  </span>
+                ))}
+              </div>
+              
+              <p className="text-sm font-semibold mb-2">📚web Development</p>
+              <div className="flex flex-wrap gap-2 mb-4">
+                {["React", "Tailwind", "CSS"].map((skill) => (
+                  <span
+                    key={skill}
+                    className="bg-gray-700 px-3 py-1 rounded-full text-sm hover:bg-gray-600 transition"
+                  >
+                    
+                    {skill}
+                  </span>
+                ))}
+              </div>
+
+              <p className="text-sm font-semibold mb-2">📚Databases</p>
+              <div className="flex flex-wrap gap-2 mb-4">
+                {["MySQL", "SQLite"].map((skill) => (
+                  <span
+                    key={skill}
+                    className="bg-gray-700 px-3 py-1 rounded-full text-sm hover:bg-gray-600 transition"
+                  >
+                    {skill}
+                  </span>
+                ))}
+              </div>
+
+              <p className="text-sm font-semibold mb-2">📚Networking</p>
+              <div className="flex flex-wrap gap-2 mb-4">
+                {[
+                  "VLAN Config",
+                  "Dynamic & Static IP",
+                  "Subnetting",
+                  "Cisco packet Tracer",
+                ].map((skill) => (
+                   <span
+                    key={skill}
+                    className="bg-gray-700 px-3 py-1 rounded-full text-sm hover:bg-gray-600 transition"
+                  >
+                    {skill}
+                  </span>
+                ))}
+              </div>
+              
+              <p className="text-sm font-semibold mb-2"> 📚Tools & Platforms</p>
+              <div className="flex flex-wrap gap-2 mb-6">
+                {["Git", "GitHub", "VS Code", "Postman"].map((skill) => (
+                  <span
+                    key={skill}
+                    className="bg-gray-700 px-3 py-1 rounded-full text-sm hover:bg-gray-600 transition"
+                 >  
+                    {skill}
+                  </span>
+              ))}
+            </div>
+              
               <h4 className="font-semibold underline mb-1">Soft-Skills</h4>
               <ul className="grid grid-cols-2 gap-2">
                 <li>📚Problem Solving</li> 
@@ -76,11 +132,15 @@ export default function About(){
                 <li>📚Continuous Learning</li> 
                 <li>📚Adaptability</li>     
               </ul> 
+            </div>
+        
             </div>   
           </div>
         </div>
-      </div>
+      
+    
     </section>
   );
 }
+
 
