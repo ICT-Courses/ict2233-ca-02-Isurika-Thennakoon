@@ -6,7 +6,7 @@ export default function Contact() {
    const [form, setForm]= useState({ name: "", email: "", message: "" });
 
   const handleChange = (e) => {
-    setForm({ ...form, [e.target.mame]: e.target.value});
+    setForm({ ...form, [e.target.name]: e.target.value});
   };  
   const handleSubmit =(e) => {
     e.preventDefault();
@@ -59,6 +59,7 @@ export default function Contact() {
           Send Message
         </button>
       </form>
+       
     </section>
   );
 }

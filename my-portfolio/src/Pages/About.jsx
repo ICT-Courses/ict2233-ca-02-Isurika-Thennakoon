@@ -15,9 +15,9 @@ export default function About(){
       className="min-h-screen px-4 md:px-20 py-12 relative"
       >
       <div className="relative z-10 text-gray">
-        <h2 className="text-4xl font-bold text-center mb-16">About Me!</h2>
+        <h2 className="text-5xl font-bold text-center mb-16">About Me!</h2>
 
-        <div className="grid md:grid-cols-2 gap-10 item-center">
+        <div className="grid md:grid-cols-2 gap-10 items-center">
 
           {/* Left Side - Profile Image */}
           <img
@@ -30,10 +30,10 @@ export default function About(){
           <div className="space-y-8">
 
             {/* Background Box */}
-            <div className="bg-gray-400 text-white p-6 rounded-lg shadow-lg relative">
+            <div className="bg-gray-600 text-white p-6 rounded-lg shadow-lg relative">
                <h3 className="text-2xl font-semibold mb-2">Background</h3>
               <p>
-                I am currently pursuing a <storng>Bsc in Information Technology</storng>.
+                I am currently pursuing a <strong>Bsc in Information Technology</strong>.
                 I am passionate about technology and software development. My journey
                 has given me a strong foundation in computer science, coding, and 
                 problem-solving.
@@ -41,7 +41,7 @@ export default function About(){
             </div>
 
             {/* Education Box */}
-            <div className="bg-gray-500 text-white p-6 rounded-lg shadow-lg relative">
+            <div className="bg-gray-800 text-white p-6 rounded-lg shadow-lg relative">
               <h3 className="text-2xl font-semibold mb-2">Education</h3>
               <p> 
                 Studying at the <strong> University of Sri Jayewardenepura</strong>,
@@ -52,15 +52,15 @@ export default function About(){
             </div>
 
             {/* Skills Box */}
-            <div className="bg-gray-500 text-white p-6 rounded-lg shadow-lg relative">
+            <div className="bg-gray-800 text-white p-6 rounded-lg shadow-lg relative">
               <h3 className="text-2xl font-semibold mb-2">Skills</h3>
 
               {/* Technical Skills */}
-              <h4 className="font-semibpld underline mb-1">Technical Skills</h4>
+              <h4 className="font-semibold underline mb-1">Technical Skills</h4>
               <ul className="grid grid-cols-2 gap-2 mb-4">
                 <li>React.js</li>
                 <li>Tailwind CSS</li>
-                <li>JavaScripts</li>
+                <li>JavaScript</li>
                 <li>Git & GitHub</li>
                 <li>REST APIs</li>
                 <li>Responsive Design</li>

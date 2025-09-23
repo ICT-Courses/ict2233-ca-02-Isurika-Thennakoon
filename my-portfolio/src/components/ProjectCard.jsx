@@ -6,6 +6,7 @@ export default function ProjectCard({ title, img, description, link, bgColor}) {
       href={link}
       target="_blank"
       rel="noopener noreferrer"
+      aria-label={`View project: ${title}`}
       className={`block ${bgColor} dark:bg-gray-900/90 backdrop-blur-md rounded-2xl shadow-lg p-4 hover:shadow-2xl transform hover:-translate-y-2 transition-all duration-300`}
     >
       <img

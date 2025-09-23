@@ -27,7 +27,7 @@ const projects  = [
     img: Project3,
     description:
       "A modern and responsive furniture website showcasing a variety of home and office furniture, allowing users to browse products, view details, and get inspiration for interior design.",
-    link:"https://github.com/your-username/weather-app",
+    link:"https://drive.google.com/file/d/1-KEgrvyxWhqn6yypsrx4Z8iRchwWfjx3/view?usp=sharing",
     bgColor: "bg-blue-100/90",
   },
 ];
