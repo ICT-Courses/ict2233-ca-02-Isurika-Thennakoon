@@ -31,6 +31,7 @@ Vite – Fast frontend build tool and development server
 Lucide React – Icons for social links and UI elements  
 JavaScript (ES6+) – Core programming language  
 HTML5 & CSS3 – Markup and styling 
-Git & GitHub – Version control and deployment via GitHub Pages  
+Git & GitHub – Version control and deployment via GitHub Pages 
+
 # Live Demo
 Check out the live demo here: [My-Portfolio] (https://ict-courses.github.io/ict2233-ca-02-Isurika-Thennakoon/)
